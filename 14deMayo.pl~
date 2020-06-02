@@ -1,0 +1,6 @@
+/*suma de numeros pares de una lista*/
+suma():-
+dividir([ ],Pares).
+dividir([L|R],[L|P],I):-E is L mod 2,E=0,dividir(R,P,I),!.
+
+/*numero maximo de una lista*/
